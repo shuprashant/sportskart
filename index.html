@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>sportkart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+	
+	<div id="main">
+		<nav>
+		<img src="images/mainlogo.png" class="logo">
+		
+			<ul class="main-nav" id="check">
+				<li class="active"><a href="index.php">HOME</a></li>
+				<li><a href="">REGISTRATION &#9947</a>
+					<ul id="drop">
+						<li><a href="indoor.html">Indoor Games</a></li><br>
+						<li><a href="outdoor-me.html">Outdoor Games</a></li>
+					</ul>
+				</li>
+				<li><a href="schedule.txt">GAME SCHEDULE</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				
+			</ul>
+		
+			<a href="#" class="mob" onclick="slideshow()"><i class="fa fa-bars"></i> </a>
+		</nav>
+		<div class="main-content">
+			<h1>Welcome to <span style="color:red;">Sports<i>kart</i></span>.<br>A registration website..!!</h1>
+			<button onclick="show()" class="btn">Register Here..&#9755</button>
+		</div>
+	</div>
+	<footer>
+		<p> Sports, Copyright &copy; 2017</p>
+		<p><center><button type="button" id="ajax" onclick="load()">know more</button></center></p>
+	</footer>
+	<script type="text/javascript">
+		function slideshow(){
+			var x= document.getElementById('check');
+			if(x.style.display === "none"){
+				x.style.display= "block";
+			}
+			else{
+				x.style.display="none";
+			}
+		}
+		function show(){
+			var y= document.getElementById("drop")
+			if(y.style.display === "none"){
+				y.style.display = "block";
+			}
+			else{
+				y.style.display = "none";
+			}
+		}
+		function load(){
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function(){
+			if(this.readyState == 4 && this.status== 200){
+				document.getElementById("ajax").innerHTML= this.responseText;
+			}
+			};
+			xhttp.open("GET","ajax_info.txt",true);
+			xhttp.send();
+		
+		}
+	</script>
+ </body>
+ </html>

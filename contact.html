@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>sportkart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+	
+	<div id="main">
+		<nav>
+		<img src="images/mainlogo.png" class="logo">
+			<ul class="main-nav" id="check">
+				<li><a href="index.php">HOME</a></li>
+				<li><a href="">REGISTRATION &#9947</a>
+					<ul>
+						<li><a href="indoor.html">Indoor Games</a></li><br>
+					    <li><a href="outdoor-me.html">Outdoor Games</a></li>
+					</ul>
+				</li>
+				<li><a href="#">GAME SCHEDULE</a></li>
+				<li class="active"><a href="contact.html">CONTACT</a></li>
+				
+			</ul>
+			<a href="#" class="mob" onclick="slideshow()"><i class="fa fa-bars"></i> </a>
+		</nav>
+		<div class="content">
+			<h1>Contact Us..&#9786</h1><br>
+			<h2>Make us a call &#9743 --></h2><br>
+			<p>
+				Sports head:Ansar sir:9826541357<br><br>Co-ordinators:<br>
+				<ul class="list">
+					<li>Anchal Tiwari : 9923316252</li>
+					<li>Neha Sharma   : 9341568432</li>
+					<li>Humera Shaikh : 8632156943</li>
+				</ul><br>
+				<p title="click here"><a href="msg.php" id="msg">You may leave us a message here.. &#9993</a></p>
+			</p>
+		</div>
+	</div>
+	<footer>
+		<p> Sports, Copyright &copy; 2017</p>
+	</footer>
+		<script type="text/javascript">
+			function slideshow(){
+				var x= document.getElementById('check');
+				if(x.style.display === "none"){
+					x.style.display= "block";
+				}
+				else{
+					x.style.display="none";
+				}
+			}
+		</script>
+ </body>
+ </html>

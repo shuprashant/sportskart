@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	border-radius: 50%;
+}
+h1{
+	text-align: center;
+	color: black;
+}
+body{
+	background-color: white;
+}
+
+

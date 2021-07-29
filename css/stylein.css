@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+
+img{
+	margin-left: 5px;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+#heading-block{
+	width: 100%;
+	height: auto;
+	float: left;
+	color: #1aaa1a;
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+#heading-block h2{
+		line-height: 35px;
+		border-left: 20px solid #1aaa1a;
+		padding-left: 10px;
+}
+/*====category box====*/
+
+.other-container{
+	margin-top: 10px;
+
+}
+.game-box{
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-left: 17px;
+	position: relative;
+	float: left;
+}
+
+.game-box img{
+	max-width: 100%;
+	transition: all .5s ease;
+}
+.bev-trans{
+	background:rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0;
+	transition: all .5s ease;
+}
+.game-box:hover .bev-trans{
+	opacity: 1;
+	transform: scale(1.2,1.2);
+	transition: all .5s ease;
+}
+.games-box:hover img{
+	transform: scale(1.2,1.2);
+	transition: all .5s ease;
+}
+.bev-feature{
+	text-align: center;
+	margin-top: -100px;
+	transition: all .5s ease;
+}
+.game-box:hover .bev-feature{
+	margin-top: 100px;
+	transition: all .5s ease;
+}
+.bev-feature p{
+	color: #00eb00;
+	font-family: verdana;
+}
+.bev-feature input{
+	width: 150px;
+	height: 35px;
+	font-size: 17px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
